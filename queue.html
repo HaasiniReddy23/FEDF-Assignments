@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="addCustomer()">Add Customer</button>
+<button onclick="removeCustomer()">Remove Customer</button>
+<button onclick="firstCustomer()">First Customer</button>
+<button onclick="totalCustomers()">Total Customers</button>
+
+<p id="result"></p>
+
+<script>
+let queue = [];
+
+function addCustomer() {
+    let name = prompt("Enter Customer Name");
+    queue.push(name);
+    document.getElementById("result").innerHTML =
+    name + " Added";
+}
+
+function removeCustomer() {
+    let removed = queue.shift();
+    document.getElementById("result").innerHTML =
+    removed + " Removed";
+}
+
+function firstCustomer() {
+    document.getElementById("result").innerHTML =
+    "First Customer: " + queue[0];
+}
+
+function totalCustomers() {
+    document.getElementById("result").innerHTML =
+    "Total Customers: " + queue.length;
+}
+</script>
+
+</body>
+</html>
