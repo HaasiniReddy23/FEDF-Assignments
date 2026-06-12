@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #ffffff;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: 30px auto;
+            width: 300px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        h2 {
+            text-align: center;
+            color: #6b083d;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .inline {
+            width: auto;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px;
+            width: 48%;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <h2>Student Registration</h2>
+
+    <!-- Full Name -->
+    Full Name:
+    <input type="text" name="name" required>
+
+    <!-- Email -->
+    Email:
+    <input type="email" name="email" required>
+
+    <!-- Password -->
+    Password:
+    <input type="password" name="password" required>
+
+    <!-- Date of Birth -->
+    Date of Birth:
+    <input type="date" name="dob">
+
+    <!-- Gender -->
+    Gender:
+    <input type="radio" name="gender" value="male" class="inline"> Male
+    <input type="radio" name="gender" value="female" class="inline"> Female
+
+    <br><br>
+
+    <!-- Course -->
+    Course:
+    <select name="course">
+        <option>B.Tech</option>
+        <option>BBA</option>
+        <option>B.Sc</option>
+    </select>
+
+    <!-- Skills -->
+    Skills:
+    <input type="checkbox" class="inline"> HTML
+    <input type="checkbox" class="inline"> CSS
+    <input type="checkbox" class="inline"> Java
+
+    <br><br>
+
+    <!-- Address -->
+    Address:
+    <textarea rows="3"></textarea>
+
+    <!-- Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
